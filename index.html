@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Puzzle</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#canvas {
+				border: 1px solid black;
+			}
+			body {
+				height: 100vh;
+				background-color: gray;
+			}
+			.container {
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				gap: 1em;
+			}
+			.selectBtn {
+				background-color: black;
+				color: white;
+				border: none;
+				width: 10em;
+				height: 7em;
+				cursor: pointer;
+				border-radius: 2em;
+				font-weight: bold;
+				font-family: Monospace;
+				
+			}
+			.selectBtn:hover {
+				background-color: green;
+				color: white;
+			}
+			#btnDiv {
+				display: flex;
+				gap: 1em;
+			}
+			#gameDiv {
+				display: none;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 1em;
+			}
+			#shuffleBtn {
+				background-color: lightblue;
+				border: none;
+				cursor: pointer;
+				height: 3em;
+				width: 20em;
+				border-radius: 1em;
+				color: black;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h1>Slide Puzzle</h1>
+			</div>
+			<div class="btn-Div" id="btnDiv">
+				<button class='selectBtn' onclick="aira()">Aira Ahegao 3x3</button>
+				<button class='selectBtn' onclick="patrick()">Patrick UwU 4x4</button>
+			</div>
+			<div id="gameDiv">
+				<canvas id="canvas"></canvas>
+				<button id="shuffleBtn">Shuffle</button>
+			</div>
+		</div>
+		<script src="code.js"></script>
+	</body>
+</html>
