@@ -8,7 +8,7 @@ const img = new Image();
 
 let sound = new Audio("sheesh.mp3");
 
-const puzzleSize = 4;
+let puzzleSize;
 let pieceIndex = [];
 const correctIndex = [];
 
@@ -19,6 +19,7 @@ function patrick() {
 	img.src = 'patrick.jpg';
 	btnDiv.style.display = 'none';
 	gameDiv.style.display = 'flex';
+	puzzleSize = 4;
 	
 	
 }
@@ -26,6 +27,7 @@ function aira() {
 	img.src = 'aira.png';
 	btnDiv.style.display = 'none';
 	gameDiv.style.display = 'flex';
+	puzzleSize = 3;
 }
 
 function addArray(arr) {
